@@ -158,7 +158,7 @@
 	{trigger: "RR", replacement: "\\mathbb{R}", options: "mA"},
 	{trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},
 	{trigger: "NN", replacement: "\\mathbb{N}", options: "mA"},
-	{trigger: "\\mathbb{N} N", replacement: "\\mathcal{N}", options: "mA"}, // the normal distribution is ubiquitous
+	{trigger: "\\mathbb{N}N", replacement: "\\mathcal{N}", options: "mA"}, // the normal distribution is ubiquitous
 	{trigger: "UU", replacement: "\\mathbb{U}", options: "mA"},  // the universal set
 
     // Handle spaces and backslashes
