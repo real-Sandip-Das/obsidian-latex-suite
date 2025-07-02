@@ -132,8 +132,9 @@
     {trigger: "=>", replacement: "\\implies", options: "mA"},
 	{trigger: "=<", replacement: "\\impliedby", options: "mA"},
 
-	{trigger: "and", replacement: "\\cap", options: "mA"},
-	{trigger: "orr", replacement: "\\cup", options: "mA"},
+	// Set theory
+	{trigger: "cap", replacement: "\\cap", options: "mA"},
+	{trigger: "cup", replacement: "\\cup", options: "mA"},
 	{trigger: "inn", replacement: "\\in", options: "mA"},
 	{trigger: "notin", replacement: "\\not\\in", options: "mA"},
     {trigger: "\\\\\\", replacement: "\\setminus", options: "mA"},
@@ -142,6 +143,14 @@
 	{trigger: "eset", replacement: "\\emptyset", options: "mA"},
 	{trigger: "set", replacement: "\\{ $0 \\}$1", options: "mA"},
 	{trigger: "e\\xi sts", replacement: "\\exists", options: "mA", priority: 1},
+	{trigger: "cmpl", replacement: "^{c}", options: "mA"},
+
+	// Logical
+	{trigger: "andd", replacement: "\\land", options: "mA"},  // if we are using "orr" instead of "lor" then why not
+	{trigger: "orr", replacement: "\\lor", options: "mA"},  // "lor" conflicts with "color"
+	{trigger: "nott", replacement: "\\neg", options: "mA"},  // "not" conflicts with "notin"
+	{trigger: "xor", replacement: "\\oplus", options: "mA"},
+
 
 	{trigger: "LL", replacement: "\\mathcal{L}", options: "mA"},
 	{trigger: "HH", replacement: "\\mathcal{H}", options: "mA"},
@@ -149,6 +158,8 @@
 	{trigger: "RR", replacement: "\\mathbb{R}", options: "mA"},
 	{trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},
 	{trigger: "NN", replacement: "\\mathbb{N}", options: "mA"},
+	{trigger: "\\mathbb{N} N", replacement: "\\mathcal{N}", options: "mA"}, // the normal distribution is ubiquitous
+	{trigger: "UU", replacement: "\\mathbb{U}", options: "mA"},  // the universal set
 
     // Handle spaces and backslashes
 
