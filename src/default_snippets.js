@@ -145,7 +145,7 @@
 	{trigger: "eset", replacement: "\\emptyset", options: "mA"},
 	{trigger: "set", replacement: "\\{ $0 \\}$1", options: "mA"},
 	{trigger: "e\\xi sts", replacement: "\\exists", options: "mA", priority: 1},
-	{trigger: "cmpl", replacement: "^{c}", options: "mA"},
+	{trigger: "cpl", replacement: "^{c}", options: "mA"},
 
 	// Logical
 	{trigger: "andd", replacement: "\\land", options: "mA"},  // if we are using "orr" instead of "lor" then why not
